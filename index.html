@@ -1,56 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-  <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-  <title>Hello World!</title>
-
-  <!-- The website stylesheet -->
-  <link rel="stylesheet" href="/style.css" />
-
-  <!-- The website JavaScript file -->
-  <script src="/script.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Rionty 🎈</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff0f6;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+    }
+    .container {
+      position: relative;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    h1 {
+      color: #d6336c;
+      font-size: 2.5em;
+      margin: 20px 0 10px;
+    }
+    p {
+      font-size: 1.2em;
+      color: #555;
+      margin: 0 0 20px;
+    }
+    .balloons, .confetti {
+      position: absolute;
+      z-index: -1;
+    }
+    .balloons {
+      top: -100px;
+      left: -50px;
+      animation: float 6s ease-in-out infinite;
+    }
+    .confetti {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(10deg); }
+    }
+  </style>
 </head>
-
 <body>
-  <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-  <div class="wrapper">
-    <div class="content" role="main">
-      <h1 class="title">Oh hi website!</h1>
-      <img src="/cool-website.svg" class="illustration" alt="cool website" />
-      <div class="instructions">
-        <p>
-          Fork <a href="https://github.com/glitchdotcom/website-to-compute">this project</a> and open it in a GitHub Codespace.
-        </p>
-        <p> Follow the steps in the README to deploy your new website to Fastly in a few steps!
-        </p>
+<div class="container">
+  <img src="사진.jpg" alt="Rionty's Photo" />
+  <h1>Happy Birthday, Rionty!</h1>
+  <p>To my one and only baby girl,<br>
+  You are the joy in my days, the light in my heart, and the most beautiful part of my life.<br>
+  I hope this year brings you endless laughter, success, and moments that feel like magic.<br>
+  And just like Taylor says... <br>
+  <em>"Never grow up..."</em><br>
+  I love you more than words can ever say. 💖</p>
 
-      </div>
+  <audio autoplay loop>
+    <source src="NeverGrowUp.mp3" type="audio/mp3">
+  </audio>
 
-      <footer class="footer">
-        <div>
-          <a class="remix" href="https://github.com/glitchdotcom/website-to-compute">🚧 Get your own site</a>
-        </div>
-      </footer>
-    </div>
-  </div>
+  <img src="https://i.imgur.com/balloons.png" class="balloons" alt="🎈">
+  <img src="https://i.imgur.com/confetti.png" class="confetti" alt="🎊">
+</div>
 </body>
-
 </html>
+
